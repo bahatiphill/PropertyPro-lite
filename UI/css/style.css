@@ -127,8 +127,8 @@ footer {
   letter-spacing: 0.1em;
 }
 
-#signin,
-#signup {
+.signin,
+.signup {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
@@ -138,11 +138,39 @@ footer {
   color: #fff;
 }
 
-#signin {
+.signin {
   background-color: #fff;
   color: #e81c4f;
 }
-#signup {
+.signup {
   color: #fff;
   background-color: #e81c4f;
+}
+
+/*Sign Up page*/
+.main-signin {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.1), #001),
+    url("../assets/img/bg.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+}
+.form-class {
+  margin: 0 auto;
+  max-width: 35em;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  border: 1px solid #888;
+  border-radius: 7px;
+  background-color: white;
+
+  padding-bottom: 3em;
+}
+
+.form-class input {
+  height: 2em;
+  width: 23em;
 }
