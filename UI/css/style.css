@@ -1,0 +1,148 @@
+body {
+  line-height: 1.5;
+  padding: 1em 0.5em;
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #566b78;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+header div {
+  display: inline-block;
+}
+
+.logo {
+  float: left;
+}
+
+/*header logo*/
+.logo a {
+  text-decoration: none;
+  color: #444;
+  float: left;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #566b78;
+  font-size: 20px;
+  margin-left: 1em;
+  font-weight: 500;
+}
+.menu a:hover {
+  color: #e81c4f;
+}
+
+.signing {
+  float: right;
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(4, 9, 30);
+  padding: 8px;
+  text-align: center;
+}
+
+.welcome {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.1), #001),
+    url("../assets/img/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+}
+
+.welcome h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.welcome a {
+  border: 1px solid #e81c4f;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+.welcome a:hover {
+  background: #e81c4f;
+  color: white;
+}
+
+.welcome p {
+  color: #8ab92d;
+  font-weight: bold;
+  font-size: 15px;
+}
+.details {
+  margin: 2em;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+.details div {
+  flex: 1 1 0px;
+  padding: 2em;
+}
+.details div img {
+  height: 60px;
+}
+
+.more-details {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.1), #001),
+    url("../assets/img/bg.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+}
+
+.more-details p {
+  color: aliceblue;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+#signin,
+#signup {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 2px;
+  background-color: #e81c4f;
+  border: 1px solid #e81c4f;
+  color: #fff;
+}
+
+#signin {
+  background-color: #fff;
+  color: #e81c4f;
+}
+#signup {
+  color: #fff;
+  background-color: #e81c4f;
+}
