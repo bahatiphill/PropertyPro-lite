@@ -222,3 +222,32 @@ footer {
   border: 2px solid #30a2e9;
   border-radius: 5px;
 }
+
+/* Property details page*/
+
+.property-details {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+.property-details img {
+  width: 50%;
+  height: auto;
+  margin: 1em;
+}
+
+.property-details p {
+  margin: 1em;
+}
+
+.property-details button {
+  display: inline;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 2px;
+  background-color: #58acdd;
+  border: 1px solid #58acdd;
+  color: #fff;
+  margin-bottom: 2em;
+}
