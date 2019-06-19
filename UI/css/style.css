@@ -239,12 +239,17 @@ footer {
   }
 }
 
+.house-details h2 {
+  margin: 0.01em;
+  padding: 0.01em;
+}
+
 .property-details {
   margin: 0 auto;
   width: 90%;
   text-align: center;
   margin-top: 5em;
-  margin-bottom: 4em;
+  margin-bottom: 5em;
 }
 
 /* Clear floats after the columns */
@@ -260,11 +265,11 @@ footer {
 
 .property-details button {
   display: inline;
-  padding: 10px 20px;
+  padding: 10px 50px;
   text-decoration: none;
   border-radius: 2px;
-  background-color: #58acdd;
-  border: 1px solid #58acdd;
+  background-color: #e81c4f;
+  border: 1px solid #e81c4f;
   color: #fff;
   margin-bottom: 2em;
 }
