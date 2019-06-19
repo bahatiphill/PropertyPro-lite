@@ -1,8 +1,9 @@
 body {
   line-height: 1.5;
-  padding: 1em 0.5em;
   font-family: "Helvetica", "Arial", sans-serif;
   color: #566b78;
+  margin: 0;
+  background-color: #ddd;
 }
 
 h2 {
@@ -12,7 +13,12 @@ h2 {
 
 header {
   text-align: center;
-  margin-bottom: 2em;
+
+  padding: 2em;
+  box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  overflow: hidden;
+  background-color: white;
 }
 
 header div {
@@ -163,7 +169,7 @@ footer {
   max-width: 35em;
   margin-top: 5em;
   margin-bottom: 5em;
-  border: 1px solid #888;
+  border: 1px solid #eee;
   border-radius: 7px;
   background-color: white;
 
@@ -177,15 +183,8 @@ footer {
 
 /* properties page*/
 .houses-container {
-  /*width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 4em;
-  padding-bottom: 1em; */
-
   padding-top: 2em;
   width: 90%;
-
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -198,9 +197,6 @@ footer {
 }
 
 .property {
-  /*display: inline-block;
-  margin: 0em 0.5em;*/
-
   display: grid;
   grid-template-rows: 10%;
   padding: 1em;
@@ -303,4 +299,107 @@ footer {
   -webkit-appearance: none;
   appearance: none;
   background-color: #fff;
+}
+
+/*Dashboard*/
+.agent-properties {
+  padding-top: 1em;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 1em;
+  align-items: stretch;
+  justify-items: stretch;
+  margin-bottom: 2em;
+}
+
+.agent-property {
+  display: grid;
+  grid-template-rows: 10%;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 1em;
+  background-color: #fff;
+  border-radius: 1em;
+}
+
+.agent-property img {
+  width: 100%;
+  height: 100%;
+}
+
+.agent-property a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.agent-tools {
+  width: 90%;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0.5em;
+  margin-top: 1em;
+  border-radius: 0.5em;
+}
+
+.agent-tools a {
+  text-decoration: none;
+  font-size: 1.5em;
+  background-color: #566b78;
+  color: #fff;
+  border-radius: 0.5em;
+  margin: 1em;
+  padding: 0.25em;
+}
+
+.agent-tools a:hover {
+  background-color: #58acdd;
+}
+.agent-image-div {
+  height: 80%;
+}
+.edit img,
+.delete img {
+  height: 16px;
+  width: 16px;
+  margin-right: 20px;
+}
+
+.tools {
+  background-color: #fff;
+  text-align: center;
+  margin-top: 1em;
+}
+
+/* Add property*/
+.form-class-div {
+  margin: 0 auto;
+  max-width: 35em;
+  margin-top: 2em;
+  margin-bottom: 5em;
+  border: 0.5px solid #eee;
+  border-radius: 7px;
+  background-color: white;
+  padding: 2em;
+}
+
+.form-class-div input {
+  width: 100%;
+  height: 2em;
+  margin-bottom: 1em;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ddd;
+}
+.form-class-div select {
+  width: 100%;
+  height: 2em;
+  margin-bottom: 1em;
+}
+
+label {
+  font-size: 1.2em;
 }
