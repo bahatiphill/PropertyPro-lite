@@ -20,9 +20,22 @@ propertiesRouter.post(
 propertiesRouter.get("/property/:id", PropertyController.viewSpecificProperty);
 
 //patch property
-propertiesRouter.patch("/property/:id", (req, res) => {});
+propertiesRouter.patch(
+  "/property/:id",
+  multipartyMiddleware,
+  PropertyController.updateProperty
+);
 
 //delete property
 propertiesRouter.delete("/property/:id", PropertyController.deleteProperty);
+
+//Mark property as sold
+propertiesRouter.patch(
+  "/property/:id/sold",
+  PropertyController.markPropertyAsSold
+);
+
+//filter properties by type
+propertiesRouter.get("/properties", PropertyController.filterByPropertyType);
 
 export default propertiesRouter;
