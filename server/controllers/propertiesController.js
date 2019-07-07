@@ -175,6 +175,23 @@ class PropertyController {
       });
     });
   }
+
+  //Mark as sold
+  static markPropertyAsSold(req, res) {
+    const property = properties.find(item => item.id == req.params.id);
+    if (property) {
+      property.status = "sold";
+
+      return res.status(200).json({
+        status: res.statusCode,
+        data: property
+      });
+    }
+    return res.status(404).json({
+      status: res.statusCode,
+      error: "Property not Found"
+    });
+  }
 }
 
 export default PropertyController;
