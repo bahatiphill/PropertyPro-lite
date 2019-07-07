@@ -30,12 +30,12 @@ propertiesRouter.patch(
 propertiesRouter.delete("/property/:id", PropertyController.deleteProperty);
 
 //Mark property as sold
-propertiesRouter.patch(
-  "/property/:id/sold",
-  PropertyController.markPropertyAsSold
-);
+// propertiesRouter.patch(
+//   "/property/:id/sold",
+//   PropertyController.markPropertyAsSold
+// );
 
 //filter properties by type
-propertiesRouter.get("/properties", PropertyController.filterByPropertyType);
+//propertiesRouter.get("/properties", PropertyController.filterByPropertyType);
 
 export default propertiesRouter;

@@ -108,23 +108,6 @@ class PropertyController {
     });
   }
 
-  //Mark as sold
-  static markPropertyAsSold(req, res) {
-    const property = properties.find(item => item.id == req.params.id);
-    if (property) {
-      property.status = "sold";
-
-      return res.status(200).json({
-        status: res.statusCode,
-        data: property
-      });
-    }
-    return res.status(404).json({
-      status: res.statusCode,
-      error: "Property not Found"
-    });
-  }
-
   //POST property
   static addProperty(req, res) {
     const validationSchema = Joi.object().keys({
@@ -190,16 +173,6 @@ class PropertyController {
         status: res.statusCode,
         data: property
       });
-    });
-  }
-
-  static filterByPropertyType(req, res) {
-    const type = req.query.type;
-
-    const result = properties.filter(item => item.type == type);
-    return res.status(200).json({
-      status: res.statusCode,
-      data: result
     });
   }
 }
