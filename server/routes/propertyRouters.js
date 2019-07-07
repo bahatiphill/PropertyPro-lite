@@ -36,6 +36,6 @@ propertiesRouter.patch(
 );
 
 //filter properties by type
-//propertiesRouter.get("/properties", PropertyController.filterByPropertyType);
+propertiesRouter.get("/properties", PropertyController.filterByPropertyType);
 
 export default propertiesRouter;
