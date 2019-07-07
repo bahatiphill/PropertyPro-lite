@@ -10,7 +10,7 @@ propertiesRouter.get("/", PropertyController.viewAllProperties);
 propertiesRouter.post("/property", (req, res) => {});
 
 //get one property
-propertiesRouter.get("/property/:id", (req, res) => {});
+propertiesRouter.get("/property/:id", PropertyController.viewSpecificProperty);
 
 //patch property
 propertiesRouter.patch("/property/:id", (req, res) => {});
