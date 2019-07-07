@@ -1,5 +1,8 @@
 import express from "express";
 import PropertyController from "../controllers/propertiesController";
+import multiparty from "connect-multiparty";
+
+const multipartyMiddleware = multiparty();
 
 const propertiesRouter = express.Router();
 
@@ -7,7 +10,11 @@ const propertiesRouter = express.Router();
 propertiesRouter.get("/", PropertyController.viewAllProperties);
 
 //post property
-propertiesRouter.post("/property", (req, res) => {});
+propertiesRouter.post(
+  "/property",
+  multipartyMiddleware,
+  PropertyController.addProperty
+);
 
 //get one property
 propertiesRouter.get("/property/:id", PropertyController.viewSpecificProperty);
