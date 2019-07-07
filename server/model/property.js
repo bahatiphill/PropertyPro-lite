@@ -8,9 +8,9 @@ const properties = [
     city: "Kigali",
     address: "Kicukiro",
     type: "miniflat",
-    createdOn: "04032019",
-    image:
-      "https://res.cloudinary.com/gur79/image/upload/v1562402604/sample.jpg"
+    created_on: "04032019",
+    image_url:
+      "https://res.cloudinary.com/gur79/image_url_url/upload/v1562402604/sample.jpg"
   },
   {
     id: 2,
@@ -21,9 +21,9 @@ const properties = [
     city: "Kigali",
     address: "Kicukiro",
     type: "3 bedrooms",
-    createdOn: "04042019",
-    image:
-      "https://res.cloudinary.com/gur79/image/upload/v1562402604/sample.jpg"
+    created_on: "04042019",
+    image_url:
+      "https://res.cloudinary.com/gur79/image_url_url/upload/v1562402604/sample.jpg"
   },
   {
     id: 3,
@@ -34,9 +34,9 @@ const properties = [
     city: "Kigali",
     address: "Kicukiro",
     type: "miniflat",
-    createdOn: "01012019",
-    image:
-      "https://res.cloudinary.com/gur79/image/upload/v1562402604/sample.jpg"
+    created_on: "01012019",
+    image_url:
+      "https://res.cloudinary.com/gur79/image_url/upload/v1562402604/sample.jpg"
   }
 ];
 
