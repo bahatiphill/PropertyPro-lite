@@ -192,6 +192,16 @@ class PropertyController {
       error: "Property not Found"
     });
   }
+
+  static filterByPropertyType(req, res) {
+    const type = req.query.type;
+
+    const result = properties.filter(item => item.type == type);
+    return res.status(200).json({
+      status: res.statusCode,
+      data: result
+    });
+  }
 }
 
 export default PropertyController;
