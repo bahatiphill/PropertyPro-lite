@@ -16,6 +16,6 @@ propertiesRouter.get("/property/:id", PropertyController.viewSpecificProperty);
 propertiesRouter.patch("/property/:id", (req, res) => {});
 
 //delete property
-propertiesRouter.delete("/property/:id", (req, res) => {});
+propertiesRouter.delete("/property/:id", PropertyController.deleteProperty);
 
 export default propertiesRouter;
