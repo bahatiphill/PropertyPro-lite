@@ -13,7 +13,6 @@ h2 {
 
 header {
   text-align: center;
-
   padding: 2em;
   box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: block;
@@ -339,27 +338,17 @@ footer {
   font-size: 1.2em;
 }
 
-.agent-tools {
-  width: 90%;
-  background-color: #fff;
-  margin: 0 auto;
-  padding: 0.5em;
-  margin-top: 1em;
-  border-radius: 0.5em;
-}
-
 .agent-tools a {
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1em;
   background-color: #566b78;
   color: #fff;
   border-radius: 0.5em;
-  margin: 1em;
   padding: 0.25em;
 }
 
 .agent-tools a:hover {
-  background-color: #58acdd;
+  background-color: #e81c4f;
 }
 .agent-image-div {
   height: 80%;
