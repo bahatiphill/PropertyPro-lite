@@ -3,6 +3,32 @@ import jwt from "jsonwebtoken";
 require("dotenv").config();
 
 class UserController {
+  //login
+  static userLogin(req, res) {
+    const loginUser = Users.find(user => {
+      return user.email == req.body.email && user.password == req.body.password;
+    });
+    if (loginUser) {
+      return res.status(200).json({
+        status: res.statusCode,
+        data: loginUser
+      });
+    }
+
+    return res.status(404).json({
+      status: res.statusCode,
+      error: "Incorrect email or password"
+    });
+  }
+
+  //Get all users
+  static allUsers(req, res) {
+    return res.status(200).json({
+      status: res.statusCode,
+      data: Users
+    });
+  }
+
   static userSignUp(req, res) {
     //get Posted data
     const {
@@ -22,6 +48,7 @@ class UserController {
       last_name,
       password,
       phoneNumber,
+      email,
       address,
       is_admin: false
     };
