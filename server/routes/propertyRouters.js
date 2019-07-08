@@ -1,6 +1,7 @@
 import express from "express";
 import PropertyController from "../controllers/propertiesController";
 import multiparty from "connect-multiparty";
+import auth from "../middleware/auth";
 
 const multipartyMiddleware = multiparty();
 
@@ -27,7 +28,11 @@ propertiesRouter.patch(
 );
 
 //delete property
-propertiesRouter.delete("/property/:id", PropertyController.deleteProperty);
+propertiesRouter.delete(
+  "/property/:id",
+  auth,
+  PropertyController.deleteProperty
+);
 
 //Mark property as sold
 propertiesRouter.patch(
