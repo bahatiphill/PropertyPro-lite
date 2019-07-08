@@ -15,7 +15,7 @@ class UserController {
       });
     }
 
-    return res.status(404).json({
+    return res.status(400).json({
       status: res.statusCode,
       error: "Incorrect email or password"
     });
