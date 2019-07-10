@@ -1,13 +1,15 @@
 const Users = [
   {
-    id: 1,
-    email: "user1@test.com",
+    id: 4,
     first_name: "user",
-    last_name: "one",
-    password: "password1",
+    last_name: "four",
+    password: "password4",
     phoneNumber: "250787393893",
+    email: "user4@test.com",
     address: "Kigali",
-    is_admin: false
+    is_admin: false,
+    token:
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QHRlc3QuY29tIiwiaWF0IjoxNTYyNjY1OTI5fQ.luaSqI1j60Ks6TcNwNDDvAirrSFhZSLvrp9A1L4E_B8"
   },
 
   {

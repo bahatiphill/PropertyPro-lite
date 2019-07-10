@@ -52,6 +52,7 @@ class UserController {
       address,
       is_admin: false
     };
+    
     user.token = newToken;
     Users.push(user);
 

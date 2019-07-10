@@ -1,7 +1,7 @@
 const properties = [
   {
     id: 1,
-    owner: 1,
+    owner: 4,
     status: "available",
     price: 200000,
     state: "Kigali",
@@ -14,7 +14,7 @@ const properties = [
   },
   {
     id: 2,
-    owner: 1,
+    owner: 4,
     status: "sold",
     price: 130000,
     state: "Kigali",
@@ -26,7 +26,7 @@ const properties = [
       "https://res.cloudinary.com/gur79/image_url_url/upload/v1562402604/sample.jpg"
   },
   {
-    id: 3,
+    id: 4,
     owner: 2,
     status: "available",
     price: 56600000,

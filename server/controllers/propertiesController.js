@@ -43,6 +43,8 @@ class PropertyController {
     const propertyId = req.params.id;
     const propertyIndex = properties.findIndex(item => item.id == propertyId);
 
+    const property = properties.find(item => (item.id = propertyId));
+
     if (propertyIndex != -1) {
       properties.splice(propertyIndex, 1);
       return res.status(200).json({
@@ -111,9 +113,6 @@ class PropertyController {
   //POST property
   static addProperty(req, res) {
     const validationSchema = Joi.object().keys({
-      owner: Joi.number()
-        .integer()
-        .required(),
       price: Joi.number().required(),
       state: Joi.string().required(),
       city: Joi.string().required(),
@@ -139,7 +138,8 @@ class PropertyController {
         error: error
       });
     }
-    const { owner, price, state, city, address, type } = req.body;
+    const owner = req.user.id;
+    const { price, state, city, address, type } = req.body;
 
     if (!req.files.image_url) {
       return res.status(400).json({
