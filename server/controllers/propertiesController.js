@@ -45,14 +45,6 @@ class PropertyController {
 
     const property = properties.find(item => (item.id = propertyId));
 
-    // Check if property is being deleted by its owner
-    // if (property.owner != req.user.id) {
-    //   return res.status(403).json({
-    //     status: res.statusCode,
-    //     error: "You do not have the permission"
-    //   });
-    // }
-
     if (propertyIndex != -1) {
       properties.splice(propertyIndex, 1);
       return res.status(200).json({
@@ -146,8 +138,6 @@ class PropertyController {
         error: error
       });
     }
-    console.log("requestd user.id");
-    console.log(req.user.id);
     const owner = req.user.id;
     const { price, state, city, address, type } = req.body;
 
