@@ -14,6 +14,7 @@ propertiesRouter.get("/", PropertyController.viewAllProperties);
 propertiesRouter.post(
   "/property",
   multipartyMiddleware,
+  auth,
   PropertyController.addProperty
 );
 
@@ -24,6 +25,7 @@ propertiesRouter.get("/property/:id", PropertyController.viewSpecificProperty);
 propertiesRouter.patch(
   "/property/:id",
   multipartyMiddleware,
+  auth,
   PropertyController.updateProperty
 );
 
@@ -37,6 +39,7 @@ propertiesRouter.delete(
 //Mark property as sold
 propertiesRouter.patch(
   "/property/:id/sold",
+  auth,
   PropertyController.markPropertyAsSold
 );
 

@@ -52,6 +52,8 @@ class UserController {
       address,
       is_admin: false
     };
+    console.log("New user Id");
+    console.log(Users.length + 1);
     user.token = newToken;
     Users.push(user);
 

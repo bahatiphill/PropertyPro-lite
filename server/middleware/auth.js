@@ -18,7 +18,10 @@ const auth = (req, res, next) => {
     req.user = user;
     next();
   } catch (error) {
-    res.status(401).send(error);
+    return res.status(401).json({
+      status: res.statusCode,
+      error: error
+    });
   }
 };
 
